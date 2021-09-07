@@ -1,0 +1,39 @@
+<div class="store-callback">
+	<div class="notice" [style.background-color]="themingService.bg.lighten(.2)">
+		<div [ngSwitch]="gift">
+			<h1 *ngSwitchCase="false">THANK YOU FOR SUBSCRIBING!</h1>
+			<h1 *ngSwitchCase="true">Thanks for the gift sub!</h1>
+
+			<div class="thank-you-text">
+				<div *ngSwitchCase="false">
+					<p>
+						It may take up to five minutes for your perks to activate. If this time has passed and you have 
+						not yet received your perks, please let us know and we will sort it out.
+					</p>
+					<p>
+						For the badge, it may take some extra time before showing up in chat or require a restart of your browser/chat client.
+					</p>
+					<div *ngIf="provider === 'paypal'">
+						<span class="text-danger font-weight-bold">WARNING:</span>
+						<span>
+							If you'd like to cancel this subscription, please use the "Do not renew" button on the subscribe page of this website.
+							Using PayPal's interface will cause the subscription to cancel prematurely.
+						</span>
+					</div>
+				</div>
+
+				<p *ngSwitchCase="true">
+					It may take up to five minutes for the gift to be seen on the recipient's account. If this time has passed
+					and they have not yet received the perks, please let us know and we will sort it out.
+				</p>
+			</div>
+
+			<div class="ok-button">
+				<button mat-stroked-button color="primary" [routerLink]="['/subscribe']">OK</button>
+			</div>
+		</div>
+		<div class="promo-image">
+			<div></div>
+		</div>
+	</div>
+</div>

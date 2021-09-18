@@ -123,8 +123,8 @@ export class EmoteComponent implements OnInit {
 	/**
      * go back to previous route
      */
-	goBack() {
-        this.location.back();
+	goBack(): void {
+    	this.location.back();
     }
 
 	/**

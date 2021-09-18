@@ -36,6 +36,7 @@ jobs:
           tags: |
             ghcr.io/seventv/app:${{ github.sha }}
             ghcr.io/seventv/app:latest
+
   deploy:
     name: Deploy (Production)
     runs-on: self-hosted

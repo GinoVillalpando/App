@@ -121,11 +121,11 @@ export class EmoteComponent implements OnInit {
 	}
 
 	/**
-     * go back to previous route
-     */
+	 * Go back to previous route
+	 */
 	goBack(): void {
-    	this.location.back();
-    }
+		this.location.back()
+	}
 
 	/**
 	 * Bring up a dialog to rename the current emote

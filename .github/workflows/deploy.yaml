@@ -12,7 +12,7 @@ on:
 env:
   REGISTRY_REPO: seventv/app
   REGISTRTY_IMAGE_NAME: seventv/app:${{ github.sha }}
-  
+
 jobs:
   build:
     runs-on: self-hosted
@@ -36,7 +36,6 @@ jobs:
           tags: |
             ghcr.io/seventv/app:${{ github.sha }}
             ghcr.io/seventv/app:latest
-
   deploy:
     name: Deploy (Production)
     runs-on: self-hosted

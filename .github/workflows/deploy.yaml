@@ -51,3 +51,4 @@ jobs:
           host: ${{ secrets.DEPLOY_HOST }}
           user: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          

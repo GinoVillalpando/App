@@ -27,7 +27,7 @@ import { ContextMenuComponent } from 'src/app/util/ctx-menu/ctx-menu.component';
 import { AuditLogEntry } from 'src/app/util/audit.structure';
 import { EmoteWarningDialogComponent } from 'src/app/emotes/emote/warning-dialog.component';
 import { environment } from 'src/environments/environment';
-import { Location } from '@angular/common'; 
+import { Location } from '@angular/common';
 
 @Component({
 	selector: 'app-emote',
@@ -124,7 +124,7 @@ export class EmoteComponent implements OnInit {
 	 * Go back to previous route
 	 */
 	goBack(): void {
-		this.location.back()
+		this.location.back();
 	}
 
 	/**
